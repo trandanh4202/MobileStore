@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="icon" href="https://tonycongmmo.com/wp-content/uploads/2020/09/cropped-landingpage-clean-studio-logo-4-flatsome-theme-uxbuilder-192x192.png" sizes="192x192">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   
+</head>
+
+
+<body id="respon">
+    <!-- tablet -->
+    <div class="tablet"><p>Trang web không hổ trợ cho TABLET</p></div>
+    <div id="wrapper">
+        <!-- giỏ hàng -->
+            <div class="giohang">
+                <a onclick="showcart()"><ion-icon name="bag-outline" style=" color:rgb(65, 65, 65); font-size: 4.6rem; margin-top: 5px;margin-right: 40px;"></ion-icon>
+                </a><div style="margin-left: 47.5px;margin-top: -42px;"><span id="countsp">0</span></div>
+            </div> 
+
+        <!-- Giỏ hàng -->
+            <div class="showcart1" id="showcart">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Sản Phẩm</th>
+                            <th>Giá</th>
+                            <th>Số Lượng</th>
+                            <th>Chọn</th>
+                        </tr>
+                    </thead>
+                        <tbody id="mycart"></tbody>
+                    </table>
+                    <div style="text-align: right;" class="price-total"><p>Tổng Tiền: <span>0<sup>đ</sup></span></p></div>
+                    <a href="cart.html" class="btnThanhToan" >Thanh Toán &rAarr;</a>
+                    <button id="xoatatca" onclick="Xoatatca()">Xóa tất cả</button>
+            </div>
+
+        <!-- WEBAPP -->
+        <!-- header1 -->
+            <div id="header1">
+                    <!--header 1 trái-->
+                    <div class="header1trai">
+                        <p>NHẬP MÃ VTL ĐỂ GIẢM 10%</p>
+                    </div>
+                    <!--header 1 phải-->
+                    <div class="header1phai">
+                        
+                        <div class="header1phaichildren">
+                            <div class="div1"> 
+                                <i class="fas fa-phone-alt"></i>
+                                <a href="tel: 0384910019" class="header1phone">0384910019</a>
+                            </div>
+                
+                            <div class="header-social-phone1 header-social-fb diviconheader1">
+                                <div class="header-social-phone-box ">
+                                    <a href="" class="tag-a header-social-fb-icon"><i class="fab fa-facebook-f" ></i></a>
+                                </div>
+                            </div>
+
+                            <div class="header-social-phone2 header-social-fb diviconheader1">
+                                <div class="header-social-phone-box ">
+                                    <a href="" class="tag-a header-social-ig-icon"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="header-social-phone3 header-social-fb diviconheader1" style="">
+                                <div class="header-social-phone-box">
+                                    <a href="" class="tag-a header-social-ig-icon"><i class="fab fa-twitter"></i></a>     
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="header1hover">
+                                <div class="header11"><label>Gọi trực tiếp</label></div> 
+                                <div class="header12"><label>Follow trên Facebook</label></div>
+                                <div class="header13"><label>Follow trên Instagram</label></div>
+                                <div class="header14"><label>Follow trên Twitter</label></div>
+                        </div> -->
+                    </div>
+            </div>
+
+        <!-- header2mobile -->
+            <div id="mobileHeader2">
+                <div class="iconMobileHover"><i onclick="shownav()" style="font-size: 2rem;" class="fas fa-bars fa-barsa"></i></div> 
+            <div class="header2logoa">
+                <img class="header2logoimg" src="./photos/P.Tuan.png">
+            </div>
+            <div class="giohanga">
+                <a onclick="showcart()"><ion-icon name="bag-outline" style=" color:rgb(31, 31, 31); font-size: 4.6rem; margin-top: 4px;margin-right: 10px;"></ion-icon>
+                </a><div style="margin-left: 47.5px;margin-top: -32px;"><span id="countspa">0</span></div>
+            </div>
+            </div>
+
+        <!-- NavMobile-->
+            <div id= "header2navmobile" onclick="shownav()" >
+                <div class="formnav"> 
+                    <input  class="header2inputab" placeholder="TÌM KIẾM ĐIỆN THOẠI">
+                    <i class="fas fa-search header2inputabi"></i>
+                
+                    <div class="header2nav">
+                        <ul class="header2ul">
+                            <li class="header2litc">TRANG CHỦ</li>
+                            <li class="li1">ĐIỆN THOẠI</li>
+                            <li class="li2">MÁY TÍNH BẢNG</li>
+                            <li class="li3">PHỤ KIỆN</li>
+                            <li class="li4">MÁY CŨ GIÁ RẺ</li>
+                            <li style="border: none;" class="li5 ">LIÊN HỆ</li>
+                        </ul>
+                    </div>
+                </div>
+                    
+            </div>
+
+        <!-- header2 Và Nav-->
+            <div id="header2">
+            <div class="header2container">
+                 <!--headersearch-->
+                <div id= "header2search">
+
+                    <div class="header2logo" >
+                        <img class="header2logoimg" src="./photos/P.Tuan.png">
+                    </div>
+
+                    <div  class="header2input">
+                    <form action="">
+                        <input type="text" placeholder="Tìm kiếm điện thoại, laptop" class="input">
+                        <button type="submit" class="header2button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    </div>
+
+                    <div class="header2giohang">
+                       <div><span class="header2giohangitem">GIỎ HÀNG</span>
+                        
+                    </div> 
+                        <span class="header2dangky">ĐĂNG KÝ</span>
+                        <span class="header2dangnhap">ĐĂNG NHẬP</span>
+                    </div>
+                </div>
+
+                <!--headernav-->
+                <div id= "header2nav">
+                    <div class="header2nav">
+                        <ul class="header2ul">
+                            <li class="header2litc">TRANG CHỦ</li>
+                            <li class="li1">ĐIỆN THOẠI</li>
+                            <li class="li2">MÁY TÍNH BẢNG</li>
+                            <li class="li3">PHỤ KIỆN</li>
+                            <li class="li4">MÁY CŨ GIÁ RẺ</li>
+                            <li class="li5">LIÊN HỆ</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        <!-- banner-->
+            <div class="section-bg-phone">
+                <div class="section-bg"></div>
+                <div class="section-description">
+                    <span class="big-img-birth">SIÊU SALE CHÚC MỪNG SINH NHẬT</span>
+                    <span class="big-img-name-product">Apple Watch Series 5</span>
+                    <span class="big-img-time-sale">Giảm ngay 1 triệu động từ 15/9-31/9</span>
+                    <a href="#" class="abtn">Xem ngay</a>
+                </div>
+                <a href="#main-product-a" class="tag-a"><i class="fas fa-chevron-down bg-down"></i></a>
+            </div>
+
+        <!-- Sảnphẩm nổi trội-->  
+            <div class="main-product">
+                <a href="category/dienthoai" class="tag-a">
+                    <div class="main-product1">
+                        <div class="main-procduct1-1 main-product-chung">
+                            <div class="main-product-overlay"></div>
+                        </div>
+                        <div class="main-product-name">
+                            <span>ĐIỆN THOẠI</span>
+                            <span class="main-reduce-price">Giảm 50%</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="category/maytinhbang" class="tag-a">
+                    <div class="main-product2">
+                        <div class="main-procduct2-2 main-product-chung">
+                            <div class="main-product-overlay"></div>
+                        </div>
+                        <div class="main-product-name">
+                            <span>MÁY TÍNH BẢNG</span>
+                            <span class="main-reduce-price">Giảm 10%</span>
+                        </div>
+                    </div>
+                </a>
+                <a href="category/phukien/?page=1" class="tag-a">
+                    <div class="main-product3">
+                        <div class="main-procduct3-3 main-product-chung">
+                            <div class="main-product-overlay"></div>
+                        </div>
+                        <div class="main-product-name">
+                            <span>TAI NGHE</span>
+                            <span class="main-reduce-price">Giảm 20%</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        <!-- Tiêu đề-->
+            <div class="product-selling-title">
+                <hr>
+                <span>SẢN PHẨM NỔI BẬT</span>
+                <hr>
+            </div>
+
+        <!-- Sản phẩm -->
+            <div id="root">
+                <div id="wrappersanpham">
+                    
+                </div>
+            </div>
+
+        <!-- Dịch vụ-->
+            <div class="product-selling-title">
+                <hr>
+                <span>DỊCH VỤ ƯU ĐÃI</span>
+                <hr>
+            </div>
+            <div class="policymain">
+                <div class="policy">
+
+                    <div class="policydiv policyborder">
+                    <i class="fas policyicon iconsize fa-truck">
+                        <div>
+                            <h2 class="policyh2">Giao Hàng Toàn Quốc</h2>
+                            <p class="policyp">Ship COD toàn quốc. Nhận hàng trong vòng 2-3 ngày</p>
+                        </div>
+                    </i>
+                    </div>
+
+                    <div class="policydiv policyborder ">
+                        <i class="fas policyicon iconsize fa-undo">
+                        <div>
+                            <h2 class="policyh2">Hoàn Trả Miễn Phí</h2>
+                            <p class="policyp">Xem hàng trước khi nhận. Hoàn trả miễn phí nếu không hài lòng</p>
+                        </div>
+                    </i> 
+                    </div>
+
+                    <div class="policydiv">
+                        <i class="fas  policyicon iconsize fa-home">
+                        <div>
+                            <h2 class="policyh2">Bảo hành 1 năm</h2>
+                            <p class="policyp">Bảo hành 1 năm. Lỗi 1 đổi 1 tất cả các sản phẩm của Apple</p>
+                        </div>
+                    </i>   
+                    </div>
+                </div>
+            </div>
+            
+        <!-- Footer -->
+            <div id="footer">
+                <div class="footercontainer">
+                    <div class="ft1">
+                        <h2 class="fth2">P.Tuan</h2>
+                        <div class="ft1div"></div>
+                        <p class="ft4p">P.Tuan là công ty con của tập đoàn PAT GROUP,
+                            đứng đầu trong chuỗi cửa hàng bán lẻ lớn nhất Việt Nam.
+                            P.Tuan sẽ mang đến cho khách hàng những trải nghiệm tuyệt vời nhất.</p>
+                    </div>
+                    <div class="ft2">
+                        <h2 class="fth2">SẢN PHẤM ĐÁNH GIÁ CAO</h2>
+                        <div class="ft1div"></div>
+                        <div class="fth2a">
+                            <img class="ftimg" src="./photos/samsung4.jpg">
+                            <div class="ft2box"><p>Điện thoại Samsung Galaxy S21 Ultra 5G 128GB</p>
+                            <p>25,990,000đ</p></div>
+                        </div>
+                        <div class="fth2a">
+                            <img class="ftimg" src="./photos/iphone2.jpg">
+                            <div class="ft2box"><p>Điện thoại iPhone 13 Pro Max 128GB</p>
+                            <p>34,990,000đ</p></div>
+                        </div>
+                        <div class="fth2a">
+                            <img class="ftimg" src="./photos/oppo3.jpg">
+                            <div class="ft2box"> <p>Điện thoại OPPO Reno6 Pro 5G</p>
+                            <p>18,490,000đ</p></div>
+                        
+                        </div>
+                    </div>
+                    <div class="ft3">
+                        <h2 class="fth2">THÔNG TIN VÀ HƯỚNG DẪN</h2>
+                        <div class="ft1div"></div>
+                        <p class="ft4pa ft4pb ">Giao hàng và thanh toán</p>
+                        <p class="ft4p ft4pb">Chế độ bảo hành</p>  
+                        <p class="ft4p ft4pb">Nhận hàng và đổi trả</p> 
+                        <p class="ft4p ft4pb">Đập hộp và nhận quà</p>
+                        <p class="ft4p ft4pb">  Chính sách bảo mật</p>
+                    </div>
+                    <div class="ft4">
+                        <h2 class="fth2">ĐỊA CHỈ CỬA HÀNG</h2>
+                        <div class="ft1div"></div>
+                        <p class="ft4pa">Số 207a, Trần Duy Hưng </p>
+                        <p class="ft4p">  Số 108, Trần Hưng Đạo </p>
+                        <p class="ft4p">  Số 108, Trần Hưng Đạo</p>
+                        <p class="ft4p">  Số 201, Phạm Ngũ Lão, Quận 1</p>
+                        <p class="ft4p">   Số 04, Nguyễn Huệ, Quận 1</p>
+                    </div>
+                </div>
+            </div>
+
+     </div>
+    <script src="main.js" ></script>
+
+ 
+    
+</body>
+
+</html>

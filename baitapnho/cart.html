@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | View Cart</title>
+    <link rel="icon"
+        href="https://tonycongmmo.com/wp-content/uploads/2020/09/cropped-landingpage-clean-studio-logo-4-flatsome-theme-uxbuilder-192x192.png"
+        sizes="192x192">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div class="boxcenter">
+
+
+        <div id="wrapper">
+            <!--header1-->
+            <div id="header1">
+                <!--header 1 trái-->
+                <div class="header1trai">
+                    <p>NHẬP MÃ VTL ĐỂ GIẢM 10%</p>
+                </div>
+                <!--header 1 phải-->
+                <div class="header1phai">
+
+                    <div class="header1phaichildren">
+                        <div class="div1">
+                            <i class="fas fa-phone-alt"></i>
+                            <a href="tel: 0384910019" class="header1phone">0384910019</a>
+                        </div>
+
+                        <div class="header-social-phone1 header-social-fb diviconheader1">
+                            <div class="header-social-phone-box ">
+                                <a href="" class="tag-a header-social-fb-icon"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="header-social-phone2 header-social-fb diviconheader1">
+                            <div class="header-social-phone-box ">
+                                <a href="" class="tag-a header-social-ig-icon"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="header-social-phone3 header-social-fb diviconheader1" style="">
+                            <div class="header-social-phone-box">
+                                <a href="" class="tag-a header-social-ig-icon"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="header1hover">
+                        <div class="header11"><label>Gọi trực tiếp</label></div> 
+                        <div class="header12"><label>Follow trên Facebook</label></div>
+                        <div class="header13"><label>Follow trên Instagram</label></div>
+                        <div class="header14"><label>Follow trên Twitter</label></div>
+                </div> -->
+                </div>
+            </div>
+            <!--header2-->
+            <div id="header2">
+                <div class="header2container">
+                    <!--headersearch-->
+                    <div id="header2search">
+
+                        <div class="header2logo">
+                            <img class="header2logoimg" src="./photos/P.Tuan.png">
+                        </div>
+
+                        <div class="header2input">
+                            <form action="">
+                                <input type="text" placeholder="Tìm kiếm điện thoại, laptop" class="input">
+                                <button type="submit" class="header2button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+
+                        <div class="header2giohang">
+                            <div><span class="header2giohangitem">GIỎ HÀNG</span>
+
+                            </div>
+                            <span class="header2dangky">ĐĂNG KÝ</span>
+                            <span class="header2dangnhap">ĐĂNG NHẬP</span>
+                        </div>
+                    </div>
+
+                    <!--headernav-->
+                    <div id="header2nav">
+                        <div class="header2nav">
+                            <ul class="header2ul">
+                                <li class="header2litc">TRANG CHỦ</li>
+                                <li class="li1">ĐIỆN THOẠI</li>
+                                <li class="li2">MÁY TÍNH BẢNG</li>
+                                <li class="li3">PHỤ KIỆN</li>
+                                <li class="li4">MÁY CŨ GIÁ RẺ</li>
+                                <li class="li5">LIÊN HỆ</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Đơn hàng-->
+            <div class="row mb ">
+                <div class="boxtrai donhangcart  mr">
+                    <div class="row">
+                        <h1 style="color: rgb(112, 112, 112); text-align: center;">THÔNG TIN NHẬN HÀNG</h1>
+
+                        <table class="thongtinnhanhang">
+                            <tbody id="thongtinnhanhang">
+                                <tr>
+                                    <td width="20%">Họ tên</td>
+                                    <td><input type="text" name="hoten"></td>
+                                </tr>
+                                <tr>
+                                    <td>Địa chỉ</td>
+                                    <td><input type="text" name="diachi"></td>
+                                </tr>
+                                <tr>
+                                    <td>Điện thoại</td>
+                                    <td><input type="text" name="dienthoai"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input type="text" name="email"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row mb">
+                        <h1 class="h1giohang">GIỎ HÀNG</h1>
+                        <table>
+                            <tr>
+                                <th>STT</th>
+                                <th>Hình</th>
+                                <th>Sản Phẩm</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền ($)</th>
+                            </tr>
+                            <tbody id="mycart"></tbody>
+                        </table>
+                    </div>
+                    <div class="row mb">
+                        <button class="dongy" onclick="dongydathang()">ĐỒNG Ý ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js" ></script>
+    <script src="Details.js"></script>
+
+    <!-- <script>
+    showgiohang_trangthanhtoan();
+    
+    </script> -->
+
+
+</body>
+
+</html>

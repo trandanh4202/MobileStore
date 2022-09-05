@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Cart</title>
+        <link rel="icon" href="https://tonycongmmo.com/wp-content/uploads/2020/09/cropped-landingpage-clean-studio-logo-4-flatsome-theme-uxbuilder-192x192.png" sizes="192x192">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    </head>
+
+    <body id="respon">
+        <div id="wrapper">
+        <!-------------------------Header------------------------------->
+        <!-- giỏ hàng -->
+        <div class="giohang">
+            <a onclick="showcart()"><ion-icon name="bag-outline" style=" color:rgb(65, 65, 65); font-size: 4.6rem; margin-top: 5px;margin-right: 40px;"></ion-icon>
+            </a><div style="margin-left: 47.5px;margin-top: -42px;"><span id="countsp">0</span></div>
+        </div>
+        <!-- Giỏ hàng -->
+        <div class="showcart1" id="showcart">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Sản Phẩm</th>
+                        <th>Giá</th>
+                        <th>Số Lượng</th>
+                        <th>Chọn</th>
+                    </tr>
+                </thead>
+                    <tbody id="mycart"></tbody>
+                </table>
+                <div style="text-align: right;" class="price-total"><p>Tổng Tiền: <span>0<sup>đ</sup></span></p></div>
+                <a href="cart.html" class="btnThanhToan" >Thanh Toán &rAarr;</a>
+                <button id="xoatatca" onclick="Xoatatca()">Xóa tất cả</button>
+        </div>
+        <div id="header1">
+            <!--header 1 trái-->
+            <div class="header1trai">
+                <p>NHẬP MÃ VTL ĐỂ GIẢM 10%</p>
+            </div>
+            <!--header 1 phải-->
+            <div class="header1phai">
+                
+                <div class="header1phaichildren">
+                    <div class="div1"> 
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel: 0384910019" class="header1phone">0384910019</a>
+                    </div>
+        
+                    <div class="header-social-phone1 header-social-fb diviconheader1">
+                        <div class="header-social-phone-box ">
+                            <a href="" class="tag-a header-social-fb-icon"><i class="fab fa-facebook-f" ></i></a>
+                        </div>
+                    </div>
+
+                    <div class="header-social-phone2 header-social-fb diviconheader1">
+                        <div class="header-social-phone-box ">
+                            <a href="" class="tag-a header-social-ig-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="header-social-phone3 header-social-fb diviconheader1" style="">
+                        <div class="header-social-phone-box">
+                            <a href="" class="tag-a header-social-ig-icon"><i class="fab fa-twitter"></i></a>     
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="header1hover">
+                        <div class="header11"><label>Gọi trực tiếp</label></div> 
+                        <div class="header12"><label>Follow trên Facebook</label></div>
+                        <div class="header13"><label>Follow trên Instagram</label></div>
+                        <div class="header14"><label>Follow trên Twitter</label></div>
+                </div> -->
+            </div>
+        </div>
+        <div id="header2">
+            <div class="header2container">
+                 <!--headersearch-->
+                <div id= "header2search">
+
+                    <div class="header2logo" >
+                        <img class="header2logoimg" src="./photos/P.Tuan.png">
+                    </div>
+
+                    <div  class="header2input">
+                    <form action="">
+                        <input type="text" placeholder="Tìm kiếm điện thoại, laptop" class="input">
+                        <button type="submit" class="header2button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                    </div>
+
+                    <div class="header2giohang">
+                       <div><span class="header2giohangitem">GIỎ HÀNG</span>
+                        
+                    </div> 
+                        <span class="header2dangky">ĐĂNG KÝ</span>
+                        <span class="header2dangnhap">ĐĂNG NHẬP</span>
+                    </div>
+                </div>
+
+                <!--headernav-->
+                <div id= "header2nav">
+                    <div class="header2nav">
+                        <ul class="header2ul">
+                            <li class="header2litc">TRANG CHỦ</li>
+                            <li class="li1">ĐIỆN THOẠI</li>
+                            <li class="li2">MÁY TÍNH BẢNG</li>
+                            <li class="li3">PHỤ KIỆN</li>
+                            <li class="li4">MÁY CŨ GIÁ RẺ</li>
+                            <li class="li5">LIÊN HỆ</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-------------------------Sản phẩm------------------------------->
+        <div id="container_sanpham">
+            <!-- <div id="chitietsanpham">
+                <div class="chitietsanpham_imgdiv">
+                <img class="chitietsanpham_img" src="photos/dienthoai1.jpg">
+                </div>
+                <div class="chitietsanpham_divphai">
+                    <p class="chitietsanpham_divphai_ten">Điện thoại iPhone 12 Pro Max 128GB</p>
+                    <p class="chitietsanpham_divphai_giacu">31,990,000</p>
+                    <p class="chitietsanpham_divphai_giamoi">32,990,000đ</p>
+                    <div class="formbtn">
+                        <div class="formbtn_tren">
+                            <button class="tren_64GB">64GB</button>
+                            <button class="tren_128GB">128GB</button>
+                            <button class="tren_256GB">256GB</button>
+                        </div>
+                        <div class="formbtn_tren">
+                            <button class="Maudo">MÀU ĐỎ</button>
+                            <button class="Maugold">MÀU GOLD</button>
+                            <button class="Mautrang">MÀU TRẮNG</button>
+                            <button class="Mauxanh">MÀU XANH</button>
+                        </div>
+                    </div>
+                    <ul class="forminfo">
+                       <li>iPhone 12 Pro Max 128 GB một siêu phẩm smartphone đến từ Apple.</li>
+                       <li>Thay đổi thiết kế mới sau 6 năm.</li>
+                       <li>Theo chu kỳ cứ mỗi 3 năm thì iPhone lại thay đổi thiết kế và 2020 là năm đánh dấu cột mốc quan trong này.</li>
+                       <li>iPhone 12 Pro Max sở hữu diện mạo mới mới với khung viền được vát thẳng và mạnh mẽ như trên iPad Pro 2020.</li>
+                    </ul>
+                    <p class="tinhtrang">Còn hàng</p>
+                    <div class="nutdathang">
+                        <input class="inputnutdathang" type="number" value="1" min="1">
+                        <button class="nutdathang_btn">THÊM VÀO GIỎ HÀNG</button>
+                    </div>
+             </div>  
+           </div> -->
+        </div>
+
+        <!----------------------------Footer---------------------------->
+        <div id="footer">
+            <div class="footercontainer">
+                <div class="ft1">
+                    <h2 class="fth2">P.Tuan</h2>
+                    <div class="ft1div"></div>
+                    <p class="ft4p">P.Tuan là công ty con của tập đoàn PAT GROUP,
+                        đứng đầu trong chuỗi cửa hàng bán lẻ lớn nhất Việt Nam.
+                        P.Tuan sẽ mang đến cho khách hàng những trải nghiệm tuyệt vời nhất.</p>
+                </div>
+                <div class="ft2">
+                    <h2 class="fth2">SẢN PHẤM ĐÁNH GIÁ CAO</h2>
+                    <div class="ft1div"></div>
+                    <div class="fth2a">
+                        <img class="ftimg" src="./photos/samsung4.jpg">
+                        <div class="ft2box"><p>Điện thoại Samsung Galaxy S21 Ultra 5G 128GB</p>
+                        <p>25,990,000đ</p></div>
+                    </div>
+                    <div class="fth2a">
+                        <img class="ftimg" src="./photos/iphone2.jpg">
+                        <div class="ft2box"><p>Điện thoại iPhone 13 Pro Max 128GB</p>
+                        <p>34,990,000đ</p></div>
+                    </div>
+                    <div class="fth2a">
+                        <img class="ftimg" src="./photos/oppo3.jpg">
+                        <div class="ft2box"> <p>Điện thoại OPPO Reno6 Pro 5G</p>
+                        <p>18,490,000đ</p></div>
+                    
+                    </div>
+                </div>
+                <div class="ft3">
+                    <h2 class="fth2">THÔNG TIN VÀ HƯỚNG DẪN</h2>
+                    <div class="ft1div"></div>
+                    <p class="ft4pa ft4pb ">Giao hàng và thanh toán</p>
+                    <p class="ft4p ft4pb">Chế độ bảo hành</p>  
+                    <p class="ft4p ft4pb">Nhận hàng và đổi trả</p> 
+                    <p class="ft4p ft4pb">Đập hộp và nhận quà</p>
+                    <p class="ft4p ft4pb">  Chính sách bảo mật</p>
+                </div>
+                <div class="ft4">
+                    <h2 class="fth2">ĐỊA CHỈ CỬA HÀNG</h2>
+                    <div class="ft1div"></div>
+                    <p class="ft4pa">Số 207a, Trần Duy Hưng </p>
+                    <p class="ft4p">  Số 108, Trần Hưng Đạo </p>
+                    <p class="ft4p">  Số 108, Trần Hưng Đạo</p>
+                    <p class="ft4p">  Số 201, Phạm Ngũ Lão, Quận 1</p>
+                    <p class="ft4p">   Số 04, Nguyễn Huệ, Quận 1</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+    <script src="Details.js" ></script>
